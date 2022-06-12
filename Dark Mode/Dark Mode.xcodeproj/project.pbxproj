@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5088B7E26C9380C00F40E5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5088B7D26C9380C00F40E5C /* AppDelegate.swift */; };
+		C5088B8026C9380C00F40E5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5088B7F26C9380C00F40E5C /* SceneDelegate.swift */; };
+		C5088B8226C9380C00F40E5C /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5088B8126C9380C00F40E5C /* ViewController1.swift */; };
+		C5088B8526C9380C00F40E5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5088B8326C9380C00F40E5C /* Main.storyboard */; };
+		C5088B8726C9380E00F40E5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5088B8626C9380E00F40E5C /* Assets.xcassets */; };
+		C5088B8A26C9380E00F40E5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5088B8826C9380E00F40E5C /* LaunchScreen.storyboard */; };
+		C5088B9526C9380E00F40E5C /* Dark_ModeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5088B9426C9380E00F40E5C /* Dark_ModeTests.swift */; };
+		C5088BA026C9380E00F40E5C /* Dark_ModeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5088B9F26C9380E00F40E5C /* Dark_ModeUITests.swift */; };
+		C5088BAE26C93A4400F40E5C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5088BAD26C93A4400F40E5C /* ViewController2.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5088B9126C9380E00F40E5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5088B7226C9380C00F40E5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5088B7926C9380C00F40E5C;
+			remoteInfo = "Dark Mode";
+		};
+		C5088B9C26C9380E00F40E5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5088B7226C9380C00F40E5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5088B7926C9380C00F40E5C;
+			remoteInfo = "Dark Mode";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C5088B7A26C9380C00F40E5C /* Dark Mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dark Mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5088B7D26C9380C00F40E5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5088B7F26C9380C00F40E5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C5088B8126C9380C00F40E5C /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		C5088B8426C9380C00F40E5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5088B8626C9380E00F40E5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5088B8926C9380E00F40E5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5088B8B26C9380E00F40E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5088B9026C9380E00F40E5C /* Dark ModeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dark ModeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5088B9426C9380E00F40E5C /* Dark_ModeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dark_ModeTests.swift; sourceTree = "<group>"; };
+		C5088B9626C9380E00F40E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5088B9B26C9380E00F40E5C /* Dark ModeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dark ModeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5088B9F26C9380E00F40E5C /* Dark_ModeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dark_ModeUITests.swift; sourceTree = "<group>"; };
+		C5088BA126C9380E00F40E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5088BAD26C93A4400F40E5C /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5088B7726C9380C00F40E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5088B8D26C9380E00F40E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5088B9826C9380E00F40E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5088B7126C9380C00F40E5C = {
+			isa = PBXGroup;
+			children = (
+				C5088B7C26C9380C00F40E5C /* Dark Mode */,
+				C5088B9326C9380E00F40E5C /* Dark ModeTests */,
+				C5088B9E26C9380E00F40E5C /* Dark ModeUITests */,
+				C5088B7B26C9380C00F40E5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5088B7B26C9380C00F40E5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5088B7A26C9380C00F40E5C /* Dark Mode.app */,
+				C5088B9026C9380E00F40E5C /* Dark ModeTests.xctest */,
+				C5088B9B26C9380E00F40E5C /* Dark ModeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5088B7C26C9380C00F40E5C /* Dark Mode */ = {
+			isa = PBXGroup;
+			children = (
+				C5088B7D26C9380C00F40E5C /* AppDelegate.swift */,
+				C5088B7F26C9380C00F40E5C /* SceneDelegate.swift */,
+				C5088B8126C9380C00F40E5C /* ViewController1.swift */,
+				C5088BAD26C93A4400F40E5C /* ViewController2.swift */,
+				C5088B8326C9380C00F40E5C /* Main.storyboard */,
+				C5088B8626C9380E00F40E5C /* Assets.xcassets */,
+				C5088B8826C9380E00F40E5C /* LaunchScreen.storyboard */,
+				C5088B8B26C9380E00F40E5C /* Info.plist */,
+			);
+			path = "Dark Mode";
+			sourceTree = "<group>";
+		};
+		C5088B9326C9380E00F40E5C /* Dark ModeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5088B9426C9380E00F40E5C /* Dark_ModeTests.swift */,
+				C5088B9626C9380E00F40E5C /* Info.plist */,
+			);
+			path = "Dark ModeTests";
+			sourceTree = "<group>";
+		};
+		C5088B9E26C9380E00F40E5C /* Dark ModeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5088B9F26C9380E00F40E5C /* Dark_ModeUITests.swift */,
+				C5088BA126C9380E00F40E5C /* Info.plist */,
+			);
+			path = "Dark ModeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5088B7926C9380C00F40E5C /* Dark Mode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5088BA426C9380E00F40E5C /* Build configuration list for PBXNativeTarget "Dark Mode" */;
+			buildPhases = (
+				C5088B7626C9380C00F40E5C /* Sources */,
+				C5088B7726C9380C00F40E5C /* Frameworks */,
+				C5088B7826C9380C00F40E5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dark Mode";
+			productName = "Dark Mode";
+			productReference = C5088B7A26C9380C00F40E5C /* Dark Mode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5088B8F26C9380E00F40E5C /* Dark ModeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5088BA726C9380E00F40E5C /* Build configuration list for PBXNativeTarget "Dark ModeTests" */;
+			buildPhases = (
+				C5088B8C26C9380E00F40E5C /* Sources */,
+				C5088B8D26C9380E00F40E5C /* Frameworks */,
+				C5088B8E26C9380E00F40E5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5088B9226C9380E00F40E5C /* PBXTargetDependency */,
+			);
+			name = "Dark ModeTests";
+			productName = "Dark ModeTests";
+			productReference = C5088B9026C9380E00F40E5C /* Dark ModeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C5088B9A26C9380E00F40E5C /* Dark ModeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5088BAA26C9380E00F40E5C /* Build configuration list for PBXNativeTarget "Dark ModeUITests" */;
+			buildPhases = (
+				C5088B9726C9380E00F40E5C /* Sources */,
+				C5088B9826C9380E00F40E5C /* Frameworks */,
+				C5088B9926C9380E00F40E5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5088B9D26C9380E00F40E5C /* PBXTargetDependency */,
+			);
+			name = "Dark ModeUITests";
+			productName = "Dark ModeUITests";
+			productReference = C5088B9B26C9380E00F40E5C /* Dark ModeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5088B7226C9380C00F40E5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C5088B7926C9380C00F40E5C = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					C5088B8F26C9380E00F40E5C = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = C5088B7926C9380C00F40E5C;
+					};
+					C5088B9A26C9380E00F40E5C = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = C5088B7926C9380C00F40E5C;
+					};
+				};
+			};
+			buildConfigurationList = C5088B7526C9380C00F40E5C /* Build configuration list for PBXProject "Dark Mode" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5088B7126C9380C00F40E5C;
+			productRefGroup = C5088B7B26C9380C00F40E5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5088B7926C9380C00F40E5C /* Dark Mode */,
+				C5088B8F26C9380E00F40E5C /* Dark ModeTests */,
+				C5088B9A26C9380E00F40E5C /* Dark ModeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5088B7826C9380C00F40E5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5088B8A26C9380E00F40E5C /* LaunchScreen.storyboard in Resources */,
+				C5088B8726C9380E00F40E5C /* Assets.xcassets in Resources */,
+				C5088B8526C9380C00F40E5C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5088B8E26C9380E00F40E5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5088B9926C9380E00F40E5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5088B7626C9380C00F40E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5088B8226C9380C00F40E5C /* ViewController1.swift in Sources */,
+				C5088BAE26C93A4400F40E5C /* ViewController2.swift in Sources */,
+				C5088B7E26C9380C00F40E5C /* AppDelegate.swift in Sources */,
+				C5088B8026C9380C00F40E5C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5088B8C26C9380E00F40E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5088B9526C9380E00F40E5C /* Dark_ModeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5088B9726C9380E00F40E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5088BA026C9380E00F40E5C /* Dark_ModeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5088B9226C9380E00F40E5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5088B7926C9380C00F40E5C /* Dark Mode */;
+			targetProxy = C5088B9126C9380E00F40E5C /* PBXContainerItemProxy */;
+		};
+		C5088B9D26C9380E00F40E5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5088B7926C9380C00F40E5C /* Dark Mode */;
+			targetProxy = C5088B9C26C9380E00F40E5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5088B8326C9380C00F40E5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5088B8426C9380C00F40E5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5088B8826C9380E00F40E5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5088B8926C9380E00F40E5C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5088BA226C9380E00F40E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5088BA326C9380E00F40E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5088BA526C9380E00F40E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dark Mode/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nibba.Dark-Mode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5088BA626C9380E00F40E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dark Mode/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nibba.Dark-Mode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C5088BA826C9380E00F40E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dark ModeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nibba.Dark-ModeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dark Mode.app/Dark Mode";
+			};
+			name = Debug;
+		};
+		C5088BA926C9380E00F40E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dark ModeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nibba.Dark-ModeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dark Mode.app/Dark Mode";
+			};
+			name = Release;
+		};
+		C5088BAB26C9380E00F40E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dark ModeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nibba.Dark-ModeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dark Mode";
+			};
+			name = Debug;
+		};
+		C5088BAC26C9380E00F40E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dark ModeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nibba.Dark-ModeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dark Mode";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5088B7526C9380C00F40E5C /* Build configuration list for PBXProject "Dark Mode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5088BA226C9380E00F40E5C /* Debug */,
+				C5088BA326C9380E00F40E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5088BA426C9380E00F40E5C /* Build configuration list for PBXNativeTarget "Dark Mode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5088BA526C9380E00F40E5C /* Debug */,
+				C5088BA626C9380E00F40E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5088BA726C9380E00F40E5C /* Build configuration list for PBXNativeTarget "Dark ModeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5088BA826C9380E00F40E5C /* Debug */,
+				C5088BA926C9380E00F40E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5088BAA26C9380E00F40E5C /* Build configuration list for PBXNativeTarget "Dark ModeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5088BAB26C9380E00F40E5C /* Debug */,
+				C5088BAC26C9380E00F40E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5088B7226C9380C00F40E5C /* Project object */;
+}
