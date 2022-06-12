@@ -13,21 +13,11 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
     @IBOutlet weak var darkModeTable: UITableView!
     
     let mode = ["Light", "Dark", "System"]
-    
     let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let darkStatus = defaults.string(forKey: "dark_mode"){
-            if(darkStatus == "Light"){
-                overrideUserInterfaceStyle = .light
-            }else if (darkStatus == "Dark"){
-                overrideUserInterfaceStyle = .dark
-            }else if (darkStatus == "System"){
-                overrideUserInterfaceStyle = .unspecified
-            }
-        }
+        title = "Settings"
         
         darkModeTable.dataSource = self
         darkModeTable.delegate = self
@@ -60,7 +50,6 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
 
          //if there are no reusable cells
          if cell == nil {
-
              // create a new cell
              cell = UITableViewCell(
              style: UITableViewCell.CellStyle.default,
@@ -71,7 +60,7 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
          cell!.textLabel!.text = mode[indexPath.row]
         
         // initialize the checkmark based on Light/Dark/System
-        if (overrideUserInterfaceStyle == .light){
+        if(defaults.string(forKey: "dark_mode") == "Light"){
             if (mode[indexPath.row] == "Light"){
                 cell.accessoryType = .checkmark
             }
@@ -79,7 +68,7 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
                 cell.accessoryType = .none
             }
         }
-        else if (overrideUserInterfaceStyle == .dark){
+         else if(defaults.string(forKey: "dark_mode") == "Dark"){
             if (mode[indexPath.row] == "Dark"){
                 cell.accessoryType = .checkmark
             }
@@ -87,7 +76,7 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
                 cell.accessoryType = .none
             }
         }
-        else if (overrideUserInterfaceStyle == .unspecified){
+         else if(defaults.string(forKey: "dark_mode") == "System"){
             if (mode[indexPath.row] == "System"){
                 cell.accessoryType = .checkmark
             }
@@ -110,28 +99,41 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
                 cell.accessoryType = row == indexPath.row ? .checkmark : .none
             }
         }
-        let mainVC = presentingViewController as! ViewController1
+        
+        let backVC = presentingViewController as! UINavigationController
+        let mainVC = backVC.topViewController as! ViewController1
+
         if(mode[indexPath.row] == "Light")
         {
-            overrideUserInterfaceStyle = .light
-            mainVC.overrideUserInterfaceStyle = .light
+            if let window = UIWindow.key{
+                UIView.transition (with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {
+                    window.overrideUserInterfaceStyle = .light
+                }, completion: nil)
+            }
             defaults.set("Light", forKey: "dark_mode")
         }
         else if(mode[indexPath.row] == "Dark")
         {
-            overrideUserInterfaceStyle = .dark
-            mainVC.overrideUserInterfaceStyle = .dark
+            if let window = UIWindow.key{
+                UIView.transition (with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {
+                    window.overrideUserInterfaceStyle = .dark
+                }, completion: nil)
+            }
             defaults.set("Dark", forKey: "dark_mode")
         }
         else if(mode[indexPath.row] == "System")
         {
-            overrideUserInterfaceStyle = .unspecified
-            mainVC.overrideUserInterfaceStyle = .unspecified
+            if let window = UIWindow.key{
+                UIView.transition (with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {
+                    window.overrideUserInterfaceStyle = .unspecified
+                }, completion: nil)
+            }
             defaults.set("System", forKey: "dark_mode")
         }
         if let darkStatus = defaults.string(forKey: "dark_mode"){
             mainVC.darkModeLabel.text = darkStatus
         }
+        setNeedsStatusBarAppearanceUpdate()
         tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
     }
     
