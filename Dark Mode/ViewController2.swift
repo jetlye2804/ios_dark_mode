@@ -19,6 +19,9 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
         super.viewDidLoad()
         title = "Settings"
         
+        darkModeTable.estimatedRowHeight = 100.0 // Adjust Primary table height
+        darkModeTable.rowHeight = UITableView.automaticDimension
+        
         darkModeTable.dataSource = self
         darkModeTable.delegate = self
     }
@@ -60,30 +63,17 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
          cell!.textLabel!.text = mode[indexPath.row]
         
         // initialize the checkmark based on Light/Dark/System
-        if(defaults.string(forKey: "dark_mode") == "Light"){
-            if (mode[indexPath.row] == "Light"){
-                cell.accessoryType = .checkmark
-            }
-            else{
-                cell.accessoryType = .none
-            }
-        }
-         else if(defaults.string(forKey: "dark_mode") == "Dark"){
-            if (mode[indexPath.row] == "Dark"){
-                cell.accessoryType = .checkmark
-            }
-            else{
-                cell.accessoryType = .none
-            }
-        }
-         else if(defaults.string(forKey: "dark_mode") == "System"){
-            if (mode[indexPath.row] == "System"){
-                cell.accessoryType = .checkmark
-            }
-            else{
-                cell.accessoryType = .none
-            }
-        }
+         
+         for item in mode {
+             if(defaults.string(forKey: "dark_mode") == item) {
+                 if(mode[indexPath.row] == item){
+                     cell.accessoryType = .checkmark
+                 }
+                 else{
+                     cell.accessoryType = .none
+                 }
+             }
+         }
 
          // return the Table View Cell
          return cell!
@@ -102,34 +92,34 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
         
         let backVC = presentingViewController as! UINavigationController
         let mainVC = backVC.topViewController as! ViewController1
+        
+        var darkModeKeyValue = "System"
+        var overrideStyle: UIUserInterfaceStyle = .unspecified
 
         if(mode[indexPath.row] == "Light")
         {
-            if let window = UIWindow.key{
-                UIView.transition (with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {
-                    window.overrideUserInterfaceStyle = .light
-                }, completion: nil)
-            }
-            defaults.set("Light", forKey: "dark_mode")
+            darkModeKeyValue = "Light"
+            overrideStyle = .light
         }
         else if(mode[indexPath.row] == "Dark")
         {
-            if let window = UIWindow.key{
-                UIView.transition (with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {
-                    window.overrideUserInterfaceStyle = .dark
-                }, completion: nil)
-            }
-            defaults.set("Dark", forKey: "dark_mode")
+            darkModeKeyValue = "Dark"
+            overrideStyle = .dark
         }
         else if(mode[indexPath.row] == "System")
         {
-            if let window = UIWindow.key{
-                UIView.transition (with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {
-                    window.overrideUserInterfaceStyle = .unspecified
-                }, completion: nil)
-            }
-            defaults.set("System", forKey: "dark_mode")
+            darkModeKeyValue = "System"
+            overrideStyle = .unspecified
         }
+        
+        if let window = UIWindow.key{
+            UIView.transition (with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {
+                window.overrideUserInterfaceStyle = overrideStyle
+            }, completion: nil)
+        }
+        defaults.set(darkModeKeyValue, forKey: "dark_mode")
+        
+        
         if let darkStatus = defaults.string(forKey: "dark_mode"){
             mainVC.darkModeLabel.text = darkStatus
         }
