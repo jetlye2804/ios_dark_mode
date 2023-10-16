@@ -61,7 +61,7 @@ if let window = UIWindow.key{
 ```
 
 ## Language and framework
-It's purely Swift (sorry but Objective-C), and using Storyboard (UIKit). I will create another project for purely SwiftUI in the future.
+It's purely Swift (sorry but Objective-C), and using Storyboard (UIKit). SwiftUI repo can refer here: [https://github.com/jetlye2804/swift_ui_dark_mode]
 
 ## Startup
 Just clone the whole repository into your local computer. You are recommended to use Xcode 13 and above. The minimum deployment version is iOS 15.0 and iPadOS 15.0.
